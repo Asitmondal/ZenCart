@@ -1,0 +1,67 @@
+<%- include('./partials/header.ejs') %>
+  <%- include('./partials/navbar.ejs') %>
+    <section>
+        <div class="container">
+            <div class="form-box">
+                <h1 id="title">Sign Up</h1>
+                <form method="post">
+                    <div class="input-group">
+                        <div class="input-field" id="nameField">
+                            <i class="fas fa-user"></i>
+                            <input type="text" required id="name" name="name" placeholder="Enter Name">
+                        </div>
+         
+
+                        <div class="input-field" for="email">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" required id="email" name="email"  placeholder="Enter Email">
+                        </div>
+
+                        <div class="input-field" for="password">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" required placeholder="Enter Password">
+                        </div>
+
+                        <p>Forgot Password <a href="#"><strong>Click Here!</strong></a> </p>
+                    </div>
+                    <div class="btn-field">
+                        <button type="submit" ><strong>Sign Up</strong></button>   
+                        <!-- <button text-decoration:"none"><a href="/login"><strong>Sign In</strong></a></button> -->
+                    </div>
+                                 
+                </form>
+                <div class="btn-field">
+                        <!-- <button type="submit" ><strong>Sign Up</strong></button>    -->
+                        <button><a href="/login"><strong>Log In</strong></a></button>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- <script>
+      //  let signupBtn = document.getElementById("signupBtn");
+        let signinBtn = document.getElementById("signinBtn");
+       // let nameField = document.getElementById("nameField");
+       // let title = document.getElementById("title");
+
+        signinBtn.onclick = function() {
+           // nameField.style.maxHeight = "0";
+          //  title.innerHTML = "Sign In";
+           // signupBtn.classList.add("disable");
+           // signinBtn.classList.remove("disable");
+          //  signinBtn.id.remove("name");
+            signinBtn.addEventListener("", (e) =>{
+                e.preventDefault();
+            });
+        }
+
+       // signupBtn.onclick = function() {
+        //    nameField.style.maxHeight = "60px";
+       //     title.innerHTML = "Sign up";
+        //    signupBtn.classList.remove("disable");
+        //    signinBtn.classList.add("disable");
+       // }
+    </script> 
+<%- include('./partials/footer.ejs') %> -->
